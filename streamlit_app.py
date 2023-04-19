@@ -30,7 +30,7 @@ streamlit.text(fruityvice_response.json())
 # Takes the JSON version of the response and normalize it
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Show it
-streamlit.text(fruityvice_normalized)
+streamlit.dataframe(fruityvice_normalized)
 
 
 
